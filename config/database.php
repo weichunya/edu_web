@@ -54,13 +54,13 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
-            'password'  => env('DB_PASSWORD', ''),
+            'host'      => env('DB_HOST', '192.168.1.226'),
+            'database'  => env('DB_DATABASE', 'sh_duobaohui'),
+            'username'  => env('DB_USERNAME', 'wanghaihong'),
+            'password'  => env('DB_PASSWORD', 'shinc123456'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
+            'prefix'    => 'sh_',
             'strict'    => false,
         ],
 

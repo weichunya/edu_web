@@ -15,7 +15,7 @@
             <div class="dbh-content-download">
                 <div class="dbh-phone"><img src="/image/phone.png"></div>
                 <div class="dbh-logo"><img src="/image/logo.png"></div>
-                <div class="dbh-download"><a href="javascript:void(0);"><img src="/image/download.png"></a></div>
+                <div class="dbh-download"><a href="{{ $download_url }}"><img src="/image/download.png"></a></div>
                 <div class="dbh-line"></div>
             </div>
             <div class="dbh-content-tel">
@@ -45,6 +45,7 @@
             </div>
         </div>
     </div>
+    <input type="hidden" id="_token" value="{{ csrf_token() }}" />
 
     <script src="/plugin/jquery-1.11.3.min.js"></script>
     <script src="/js/index.js"></script>
