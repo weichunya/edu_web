@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Redirect;
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::group(array('prefix' => '/'), function() {
+    Route::controller('/index', 'Laravel\Controller\Index\IndexController');
 
-Route::controller('/', 'Laravel\Controller\Index\IndexController');
-
+    Route::get('/hehe', function() {
+        return 'heheda';
+    });
+});
