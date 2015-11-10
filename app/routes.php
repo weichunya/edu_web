@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Redirect;
 | and give it the Closure to execute when that URI is requested.
 |
 */
+//活动
+Route::group( array('prefix' => 'activity'),function() {
+    Route::controller('/share', 'Laravel\Controller\Activity\ShareController');
+});
+
 
 // 系统
 Route::group( array('prefix' => '/system'),function() {
