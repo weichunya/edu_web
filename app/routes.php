@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Redirect;
 |
 */
 
-Route::controller('/', 'Laravel\Controller\Index\IndexController');
+// 系统
+Route::group( array('prefix' => '/system'),function() {
+    Route::controller('/download', 'Laravel\Controller\System\DownloadController');
+});
 
+Route::controller('/', 'Laravel\Controller\Index\IndexController');

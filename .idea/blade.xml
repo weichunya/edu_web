@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+  <component name="BladeInjectionConfiguration" escapedTextEnd="!!}" escapedTextStart="{!!" />
+=======
   <component name="BladeInjectionConfiguration" escapedTextEnd="!!}" escapedTextStart="{!!">
     <customDirectives>
       <data directive="@endif" />
@@ -32,4 +35,5 @@
       <data directive="@include" injection="true" prefix="&lt;?php echo $__env-&gt;make(" suffix=")-&gt;render(); ?&gt;" />
     </customDirectives>
   </component>
+>>>>>>> 074f777e998616cf28887fd9bd770a705da13dc7
 </project>
