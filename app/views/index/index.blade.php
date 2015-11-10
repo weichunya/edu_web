@@ -20,7 +20,7 @@
             </div>
             <div class="dbh-content-tel">
                 <div class="dbh-qrcode-word">扫描二维码下载</div>
-                <div class="dbh-qrcode"><img src="/image/qrcode.png"></div>
+                <div class="dbh-qrcode"><img src="/image/qr_code.png"></div>
                 <div class="dbh-tel-word">免费发送到手机</div>
                 <div class="dbh-tel">
                     <input type="text" maxlength="11">
