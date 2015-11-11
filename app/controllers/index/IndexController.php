@@ -30,10 +30,20 @@ class IndexController extends Controller {
     private function sendDownloadSms($tel, $minute = 5) {
         date_default_timezone_set('PRC');
         $expiresAt = Carbon::now()->addMinutes($minute);
-        if (Cache::add($tel, date("Y-m-d H:i:s"), $expiresAt)) {
-            $download_url = DB::table('app_version')->orderBy('update_time', 'desc')->pluck('url');
+        $ip = $this->getIP();
+        if (Cache::add($ip.'-'.$tel, date("Y-m-d H:i:s"), $expiresAt)) {
+            //$download_url = DB::table('app_version')->orderBy('update_time', 'desc')->pluck('url');
+            $download_url = "http://dwz.cn/2ag4RE";
             if (Sms::sendRegisterCode($tel, $download_url)) return '1';//成功
             return '0';//短信失败
         } else return '-1';//等待时间内
+    }
+
+    private function getIP() {
+        $ip = "";
+        if (getenv("HTTP_CLIENT_IP")) $ip = getenv("HTTP_CLIENT_IP");
+        else if(getenv("HTTP_X_FORWARDED_FOR")) $ip = getenv("HTTP_X_FORWARDED_FOR");
+        else if(getenv("REMOTE_ADDR")) $ip = getenv("REMOTE_ADDR");
+        return $ip;
     }
 }
