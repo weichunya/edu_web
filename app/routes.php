@@ -18,7 +18,6 @@ Route::group( array('prefix' => 'activity'),function() {
     Route::controller('/share', 'Laravel\Controller\Activity\ShareController');
 });
 
-
 // 系统
 Route::group( array('prefix' => '/system'),function() {
     Route::controller('/download', 'Laravel\Controller\System\DownloadController');

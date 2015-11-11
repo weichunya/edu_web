@@ -25,15 +25,17 @@ class ShareController extends ApiController {
      * @param tel 手机号
      * @param activityId 活动id
      * @param shopId 商家id
+     * @return array|\Illuminate\Http\JsonResponse
      */
     public function getGiveRedPacket() {
-        if ( !Input::has( 'tel' ) || !Input::has( 'activityId' ) || !Input::has( 'shopId' ) ) {
+        if ( !Input::has( 'tel' ) || !Input::has( 'activityId' ) || !Input::has( 'shopId' ) || !Input::has( 'scene' ) ) {
             return $this->response = $this->response( '10005' );
         }
 
         $tel = Input::get( 'tel' );
         $activityId = Input::get( 'activityId' );
         $shopId = Input::get( 'shopId' );
+        $scene = Input::get( 'scene' );
 
         $result['tel'] = $tel;
         $shareM = new ShareModel();
@@ -44,7 +46,7 @@ class ShareController extends ApiController {
             } else {
                 $res = $shareM -> addRedPacket($tel);
                 if(isset($res)) {
-                    $shareM->addShopUserTel($shopId,$tel);
+                    $shareM->addShopUserTel($shopId,$tel,$scene);
                     $result['expiry_time'] = $res['expiry_time'];
                     $result['amount'] = $res['amount'];
                     $this->response = $this->response( '20503', null ,$result);

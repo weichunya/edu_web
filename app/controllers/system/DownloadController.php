@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Log;//引入日志类
 
 /**
  * 	controller的写法：首字母大写，于文件名一致。 继承的父类需引入
- */ 
+ */
 class DownloadController extends ApiController {
 	public function __construct(){
 		parent::__construct();
@@ -34,6 +34,7 @@ class DownloadController extends ApiController {
 	public function getApp() {
 		$data = array();
 		$data[ 'shopId' ] = Input::has( 'shopId' )?Input::get( 'shopId' ):0;
+		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
 		$data[ 'shareType' ] = '1';//shareType 推广类型 1:商家推广 2:用户推广
 		$data[ 'activityId' ] = '1';
 		return Response::view('system.download', $data);
@@ -47,6 +48,7 @@ class DownloadController extends ApiController {
 	public function getShare() {
 		$data = array();
 		$data[ 'userId' ] = Input::has( 'userId' )?Input::get( 'userId' ):0;
+		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
 		$data[ 'shareType' ] = '2';//shareType 推广类型 1:商家推广 2:用户推广
 		$data[ 'activityId' ] = '1';
 		return Response::view('system.download', $data);
@@ -91,5 +93,5 @@ class DownloadController extends ApiController {
 		return Response::view('system.download_direct');
 	}
 
-	
+
 }
