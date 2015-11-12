@@ -74,6 +74,7 @@ return array(
     'IlluminateQueueClosure' => $vendorDir . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
     'KfcKeywordSearchRequest' => $baseDir . '/app/libraries/class/taobao/top/request/KfcKeywordSearchRequest.php',
     'KfcSearchResult' => $baseDir . '/app/libraries/class/taobao/top/domain/KfcSearchResult.php',
+    'Laravel\\Controller\\Activity\\RuleController' => $baseDir . '/app/controllers/activity/RuleController.php',
     'Laravel\\Controller\\Activity\\ShareController' => $baseDir . '/app/controllers/activity/ShareController.php',
     'Laravel\\Controller\\Index\\IndexController' => $baseDir . '/app/controllers/index/IndexController.php',
     'Laravel\\Controller\\System\\DownloadController' => $baseDir . '/app/controllers/system/DownloadController.php',

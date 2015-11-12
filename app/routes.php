@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Redirect;
 //活动
 Route::group( array('prefix' => 'activity'),function() {
     Route::controller('/share', 'Laravel\Controller\Activity\ShareController');
+    Route::controller('/rule', 'Laravel\Controller\Activity\RuleController');
 });
 
 // 系统

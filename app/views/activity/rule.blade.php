@@ -24,14 +24,14 @@ html,body {margin:0;padding:0;background-color:#f3f3f3;}
 <div class="panel">
     <div class="header">夺宝会是什么</div>
     <div class="line"></div>
-    <div class="pic"><img src="/img/rule_1.jpg" alt="夺宝会" width="78%"></div>
+    <div class="pic"><img src="/image/rule_1.jpg" alt="夺宝会" width="78%"></div>
     <div class="desc">“夺宝会”指用户花费1元兑换一个夺宝币，同时可获得网盘空间，用户可凭夺宝币使用夺宝会的服务。每件商品的全部夺宝号码分配完毕后，夺宝会根据夺宝规则计算出的一个号码。持有该幸运号码的用户可直接获得该商品。</div>
 </div>
 <div class="panel">
     <div class="header">夺宝会三步骤</div>
     <div class="line"></div>
     <div class="pic">
-    	<img src="/img/rule_2.jpg" alt="夺宝会" width="100%">
+    	<img src="/image/rule_2.jpg" alt="夺宝会" width="100%">
 		<table class="desc"><tr>
         	<td width="28%">获得夺宝币</td>
            <td width="39%">&nbsp;选择商品</td>
