@@ -11,7 +11,7 @@ use App\Libraries\Sms;
 
 class IndexController extends Controller {
     public function getIndex() {
-        $download_url = DB::table('app_version')->orderBy('update_time', 'desc')->pluck('url');
+        $download_url = DB::table('app_version')->where('os_type', '1')->orderBy('update_time', 'desc')->pluck('url');
         return Response::view('index.index',array('download_url' => $download_url));
     }
 
