@@ -48,5 +48,14 @@
 
     <script src="/plugin/jquery-1.11.3.min.js"></script>
     <script src="/js/index.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?527c59e6db020981dbd0e738ac5f9f09";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </body>
 </html>
