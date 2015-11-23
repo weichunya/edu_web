@@ -34,7 +34,8 @@ class IndexController extends Controller {
         if (Cache::add($ip.'-'.$tel, date("Y-m-d H:i:s"), $expiresAt)) {
             //$download_url = DB::table('app_version')->orderBy('update_time', 'desc')->pluck('url');
             $download_url = "http://dwz.cn/2ag4RE";
-            if (Sms::sendRegisterCode($tel, $download_url)) return '1';//成功
+//            if (Sms::sendRegisterCode($tel, $download_url)) return '1';//成功
+            if (Sms::sendDownloadSMS($tel)) return '1';//成功
             return '0';//短信失败
         } else return '-1';//等待时间内
     }

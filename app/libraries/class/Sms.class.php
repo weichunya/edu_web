@@ -68,6 +68,16 @@ class Sms {
 		return false;
 	}
 
+	//SMS_2560059
+	public static  function sendDownloadSMS($tel){
+		$sms = new TaobaoSms();
+		$resp = $sms->send2($tel, '夺宝会', 'SMS_2560059');
+		$result = (array)$resp->result;
+		if($result['success']=='true'){
+			return true;
+		}
+		return false;
+	}
 
 
 
