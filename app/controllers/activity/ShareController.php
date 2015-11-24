@@ -36,6 +36,7 @@ class ShareController extends ApiController {
         $activityId = Input::get( 'activityId' );
         $shopId = Input::get( 'shopId' );
         $scene = Input::get( 'scene' );
+        $os_type = Input::has('os_type')?Input::get('os_type'):'3';
 
         $result['tel'] = $tel;
         $shareM = new ShareModel();
@@ -44,7 +45,7 @@ class ShareController extends ApiController {
             if($has) {
                 $this->response = $this->response( "20501", null ,$result);
             } else {
-                $res = $shareM -> addRedPacket($tel);
+                $res = $shareM -> addRedPacket($tel,$os_type);
                 if(isset($res)) {
                     $shareM->addShopUserTel($shopId,$tel,$scene);
                     $result['expiry_time'] = $res['expiry_time'];
@@ -75,6 +76,7 @@ class ShareController extends ApiController {
         $tel = Input::get( 'tel' );
         $activityId = Input::get( 'activityId' );
         $userId = Input::get( 'userId' );
+        $os_type = Input::has('os_type')?Input::get('os_type'):'3';
 
         $result['tel'] = $tel;
         $shareM = new ShareModel();
@@ -83,7 +85,7 @@ class ShareController extends ApiController {
             if($has) {
                 $this->response = $this->response( "20501", null ,$result);
             } else {
-                $res = $shareM -> addRedPacket($tel);
+                $res = $shareM -> addRedPacket($tel,$os_type);
                 if(isset($res)) {
                     $shareM->addUserFriend($userId,$tel);
                     $result['expiry_time'] = $res['expiry_time'];

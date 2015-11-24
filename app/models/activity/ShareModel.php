@@ -32,12 +32,13 @@ class ShareModel extends Model {
         return false;
     }
 
-    public function addRedPacket($tel) {
+    public function addRedPacket($tel,$os_type) {
         $data['tel'] = $tel;
         $data['amount'] = '1';
         $data['expiry_time'] = date('Y-m-d H:i:s', strtotime('7 days'));
         $data['create_time'] = $this->nowDateTime;
         $data['sh_activity_id'] = 1;
+        $data['os_type'] = $os_type;
         $res = DB::table('red_packet')->insert($data);
         if($res) {
             return $data;

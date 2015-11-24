@@ -54,9 +54,7 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
- 			'host'      => '192.168.1.226',
-// 			'host'      => '123.56.157.137',
- 			//'host'      => 'rdsqswhmjfiys87frepua.mysql.rds.aliyuncs.com',
+ 			'host'      => '123.56.157.137',
  			'database'  => 'sh_duobaohui',
  			'username'  => 'shihe',
  			'password'  => 'shinc123456',
@@ -65,19 +63,6 @@ return array(
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => 'sh_',
 		),
-
-		// 'mysql' => array(
-		// 		'driver'    => 'mysql',
-		// 		'host'      => '192.168.0.30',
-		// 		'database'  => 'sh_modular',
-		// 		'username'  => 'xuguangjing',
-		// 		'password'  => 'xuguangjing',
-		// 		'charset'   => 'utf8',
-		// 		'collation' => 'utf8_general_ci',
-		// 		'prefix'    => 'sh_',
-		// ),
-
-		
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
