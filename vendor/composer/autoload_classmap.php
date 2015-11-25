@@ -81,6 +81,7 @@ return array(
     'Laravel\\Model\\ClientModel' => $baseDir . '/app/models/client/ClientModel.php',
     'Laravel\\Model\\Model' => $baseDir . '/app/models/Model.php',
     'Laravel\\Model\\ShareModel' => $baseDir . '/app/models/activity/ShareModel.php',
+    'Laravel\\Model\\ShopModel' => $baseDir . '/app/models/shop/ShopModel.php',
     'Laravel\\Service\\JnlService' => $baseDir . '/app/service/JnlService.php',
     'Laravel\\Service\\PeriodService' => $baseDir . '/app/service/PeriodService.php',
     'Laravel\\Service\\RechargeService' => $baseDir . '/app/service/RechargeService.php',

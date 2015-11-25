@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Input;		//引入参数类
 use Illuminate\Support\Facades\Session;		//引入session 
 use Illuminate\Support\Facades\Response;	//引入response
 
+use Laravel\Model\ShopModel;
 use Laravel\Model\SystemModel;			//引入model
 use Laravel\Model\ClientModel;
 use Illuminate\Support\Facades\Log;//引入日志类
@@ -38,6 +39,21 @@ class DownloadController extends ApiController {
 		$data[ 'shareType' ] = '1';//shareType 推广类型 1:商家推广 2:用户推广
 		$data[ 'activityId' ] = '1';
 		return Response::view('system.download', $data);
+	}
+
+	public function postRecordNum() {
+		$data = array();
+		$shopM = new ShopModel();
+
+		$data[ 'sh_shop_id' ] = Input::has( 'shopId' )?Input::get( 'shopId' ):0;
+		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
+		$data[ 'os_type' ] = Input::has( 'os_type' )?Input::get( 'os_type' ):1;
+		$data['create_time'] = date('Y-m-d H:i:s');
+		$res = $shopM->addShopShareScan($data);
+		if($res){
+			return Response::json($this->response(1));
+		}
+		return Response::json($this->response(0));
 	}
 
 	/**

@@ -56,6 +56,13 @@
 		var os_type = isiphone()? '2' : '1';
 		var scene = $('#scene').val();
 
+		var array = {
+			'shopId' : shopId,
+			'scene' : scene,
+			'os_type' : os_type
+		}
+		$.post('/system/download/record-num',array,null,'json');
+
 		$('.get_money').bind('click' , function(){
 			var phoneNumber = $('.phone').val();
 			if(!isphone(phoneNumber)){
