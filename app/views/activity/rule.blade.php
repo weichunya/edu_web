@@ -26,7 +26,7 @@ html,body {margin:0;padding:0;background-color:#f3f3f3;}
     <div class="line"></div>
     <div class="pic"><img src="/image/rule_1.jpg" alt="夺宝会" width="78%"></div>
     <div class="desc">“夺宝会”指用户花费1元兑换一个夺宝币，同时可获得网盘空间，用户可凭夺宝币使用夺宝会的服务。每件商品的全部夺宝号码分配完毕后，夺宝会根据夺宝规则计算出的一个号码。持有该幸运号码的用户可直接获得该商品。</div>
-    <div class="desc text-red">特别说明:夺宝会中的所有抽奖活动均与苹果公司（Apple Inc.）无关</div>
+    <div class="desc text-red">特别说明: 夺宝会中的所有抽奖活动均与苹果公司（Apple Inc.）无关</div>
 </div>
 <div class="panel">
     <div class="header">夺宝会三步骤</div>
