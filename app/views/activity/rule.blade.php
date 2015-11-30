@@ -73,5 +73,10 @@ html,body {margin:0;padding:0;background-color:#f3f3f3;}
 		<li><span class="desc">如果同一类商品多次获奖，请勿简单的复制粘贴之前的晒单内容。</span></li>
     </ul>
 </div>
+<div class="panel">
+    <div class="header">特别说明</div>
+    <div class="line"></div>
+    <div class="desc">夺宝会中的所有抽奖活动均与苹果公司（Apple Inc.）无关</div>
+</div>
 </body>
 </html>
