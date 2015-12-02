@@ -65,6 +65,7 @@ class DownloadController extends ApiController {
 		$data = array();
 		$data[ 'userId' ] = Input::has( 'userId' )?Input::get( 'userId' ):0;
 		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
+		$data[ 'channel' ] = Input::has( 'channel' )?Input::get( 'channel' ):2;
 		$data[ 'shareType' ] = '2';//shareType 推广类型 1:商家推广 2:用户推广
 		$data[ 'activityId' ] = '1';
 		return Response::view('system.download', $data);

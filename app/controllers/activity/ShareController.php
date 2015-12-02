@@ -77,6 +77,7 @@ class ShareController extends ApiController {
         $activityId = Input::get( 'activityId' );
         $userId = Input::get( 'userId' );
         $os_type = Input::has('os_type')?Input::get('os_type'):'3';
+        $channel = Input::has('channel')?Input::get('channel'):'2';
 
         $result['tel'] = $tel;
         $shareM = new ShareModel();
@@ -85,9 +86,9 @@ class ShareController extends ApiController {
             if($has) {
                 $this->response = $this->response( "20501", null ,$result);
             } else {
-                $res = $shareM -> addRedPacket($tel,$os_type);
+                $res = $shareM -> addRedPacket($tel,$os_type,$channel);
                 if(isset($res)) {
-                    $shareM->addUserFriend($userId,$tel);
+                    $shareM->addUserFriend($userId,$tel,$channel);
                     $result['expiry_time'] = $res['expiry_time'];
                     $result['amount'] = $res['amount'];
                     $this->response = $this->response( '20503', null ,$result);

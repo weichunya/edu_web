@@ -32,13 +32,14 @@ class ShareModel extends Model {
         return false;
     }
 
-    public function addRedPacket($tel,$os_type) {
+    public function addRedPacket($tel,$os_type,$channel = '7') {
         $data['tel'] = $tel;
         $data['amount'] = '1';
         $data['expiry_time'] = date('Y-m-d H:i:s', strtotime('7 days'));
         $data['create_time'] = $this->nowDateTime;
         $data['sh_activity_id'] = 1;
         $data['os_type'] = $os_type;
+        $data['channel'] = $channel;
         $res = DB::table('red_packet')->insert($data);
         if($res) {
             return $data;
@@ -71,14 +72,16 @@ class ShareModel extends Model {
      * 添加用户与推荐手机号关系
      * @param $userId 用户id
      * @param $tel  用户手机号
-     * @return
+     * @param $channel
+     * @return null
      */
-    public function addUserFriend($userId,$tel) {
+    public function addUserFriend($userId,$tel,$channel) {
         $data['tel'] = $tel;
         $data['sh_user_id'] = $userId;
         $data['create_time'] = date('y-m-d H:i:s',time());
+        $data['channel'] = $channel;
 
-        $has = DB::select('select 1 from sh_user_friends where tel = ? and sh_user_id = ?', array($tel,$userId));
+        $has = DB::select('select 1 from sh_user_friends where tel = ?', array($tel));
         if(!$has) {
             $res = DB::table('user_friends')->insert($data);
             return $res;
