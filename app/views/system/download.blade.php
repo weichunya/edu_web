@@ -35,7 +35,7 @@
 				<input id="shareType" type="hidden" value="{{ $shareType }}"/>
 				<input id="activityId" type="hidden" value="{{ $activityId }}"/>
 				<input id="userId" type="hidden" value="{{ $userId or '-1' }}"/>
-				<input id="channel" type="hidden" value="{{ $channel or '-1' }}"/>
+				<input id="channel" type="hidden" value="{{ $channel or '7' }}"/>
 			</p>
 			<p>
 				<button class="get_money">领取夺宝币</button>

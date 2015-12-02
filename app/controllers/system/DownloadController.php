@@ -48,6 +48,7 @@ class DownloadController extends ApiController {
 		$data[ 'sh_shop_id' ] = Input::has( 'shopId' )?Input::get( 'shopId' ):0;
 		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
 		$data[ 'os_type' ] = Input::has( 'os_type' )?Input::get( 'os_type' ):1;
+		$data[ 'channel' ] = Input::has( 'channel' )?Input::get( 'channel' ):7;
 		$data['create_time'] = date('Y-m-d H:i:s');
 		$res = $shopM->addShopShareScan($data);
 		if($res){

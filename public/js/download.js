@@ -13,7 +13,8 @@ $(document).ready(function(){
     var array = {
         'shopId' : shopId,
         'scene' : scene,
-        'os_type' : os_type
+        'os_type' : os_type,
+        'channel' : channel
     }
     $.post('/system/download/record-num',array,null,'json');
 
