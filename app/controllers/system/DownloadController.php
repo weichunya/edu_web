@@ -38,23 +38,8 @@ class DownloadController extends ApiController {
 		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
 		$data[ 'shareType' ] = '1';//shareType 推广类型 1:商家推广 2:用户推广
 		$data[ 'activityId' ] = '1';
+		$data[ 'source' ] = 1;
 		return Response::view('system.download', $data);
-	}
-
-	public function postRecordNum() {
-		$data = array();
-		$shopM = new ShopModel();
-
-		$data[ 'sh_shop_id' ] = Input::has( 'shopId' )?Input::get( 'shopId' ):0;
-		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
-		$data[ 'os_type' ] = Input::has( 'os_type' )?Input::get( 'os_type' ):1;
-		$data[ 'channel' ] = Input::has( 'channel' )?Input::get( 'channel' ):7;
-		$data['create_time'] = date('Y-m-d H:i:s');
-		$res = $shopM->addShopShareScan($data);
-		if($res){
-			return Response::json($this->response(1));
-		}
-		return Response::json($this->response(0));
 	}
 
 	/**
@@ -65,8 +50,17 @@ class DownloadController extends ApiController {
 	public function getShare() {
 		$data = array();
 		$data[ 'userId' ] = Input::has( 'userId' )?Input::get( 'userId' ):0;
-		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
 		$data[ 'channel' ] = Input::has( 'channel' )?Input::get( 'channel' ):2;
+
+		if($data[ 'userId' ] == -1){//官方(微信公众号|官方微博)推广
+			$data[ 'source' ] = 3;
+			$data[ 'shopId' ] = -1;
+		}else{//来自客户端(邀请好友) 用于记录扫码数
+			$data[ 'source' ] = 2;
+			$data[ 'shopId' ] = 0;
+		}
+
+		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
 		$data[ 'shareType' ] = '2';//shareType 推广类型 1:商家推广 2:用户推广
 		$data[ 'activityId' ] = '1';
 		return Response::view('system.download', $data);
@@ -102,6 +96,27 @@ class DownloadController extends ApiController {
 		}
 		$this->response = $this->response(1, '成功' ,$url);
 		return Response::json($this->response);
+	}
+
+	/**
+	 * 记录扫码数
+	 * @return \Illuminate\Http\JsonResponse
+	 */
+	public function postRecordNum() {
+		$data = array();
+		$shopM = new ShopModel();
+
+		$data[ 'sh_shop_id' ] = Input::has( 'shopId' )?Input::get( 'shopId' ):0;
+		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
+		$data[ 'os_type' ] = Input::has( 'os_type' )?Input::get( 'os_type' ):1;
+		$data[ 'channel' ] = Input::has( 'channel' )?Input::get( 'channel' ):7;
+		$data[ 'source' ] = Input::get( 'source' );
+		$data['create_time'] = date('Y-m-d H:i:s');
+		$res = $shopM->addShopShareScan($data);
+		if($res){
+			return Response::json($this->response(1));
+		}
+		return Response::json($this->response(0));
 	}
 
 	/**

@@ -9,12 +9,14 @@ $(document).ready(function(){
     var os_type = isiphone()? '2' : '1';
     var scene = $('#scene').val();
     var channel = $('#channel').val();
+    var source = $('#source').val();
 
     var array = {
         'shopId' : shopId,
         'scene' : scene,
         'os_type' : os_type,
-        'channel' : channel
+        'channel' : channel,
+        'source' : source
     }
     $.post('/system/download/record-num',array,null,'json');
 
@@ -64,7 +66,8 @@ $(document).ready(function(){
             'tel' : phoneNumber,
             'activityId' : activityId
         }
-        data.os_type = os_type
+        data.os_type = os_type;
+        data.source = source;
         if(shareType == '1'){
             data.shopId = shopId;
             data.scene = scene;
