@@ -33,6 +33,7 @@ class DownloadController extends ApiController {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function getApp() {
+
 		$data = array();
 		$data[ 'shopId' ] = Input::has( 'shopId' )?Input::get( 'shopId' ):0;
 		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
