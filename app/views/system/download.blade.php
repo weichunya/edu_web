@@ -37,6 +37,7 @@
 				<input id="userId" type="hidden" value="{{ $userId or '-1' }}"/>
 				<input id="channel" type="hidden" value="{{ $channel or '7' }}"/>
 				<input id="source" type="hidden" value="{{ $source or '1' }}"/>
+				<input id="sessionId" type="hidden" value="{{ $sessionId}}"/>
 			</p>
 			<p>
 				<button class="get_money">领取夺宝币</button>

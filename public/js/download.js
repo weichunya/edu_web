@@ -10,13 +10,15 @@ $(document).ready(function(){
     var scene = $('#scene').val();
     var channel = $('#channel').val();
     var source = $('#source').val();
+    var sessionId = $('#sessionId').val();
 
     var array = {
         'shopId' : shopId,
         'scene' : scene,
         'os_type' : os_type,
         'channel' : channel,
-        'source' : source
+        'source' : source,
+        'sessionId' : sessionId
     }
     $.post('/system/download/record-num',array,null,'json');
 
@@ -64,7 +66,8 @@ $(document).ready(function(){
         var os_type = isiphone()? '2' : '1';
         var data = {
             'tel' : phoneNumber,
-            'activityId' : activityId
+            'activityId' : activityId,
+            'sessionId' : sessionId
         }
         data.os_type = os_type;
         data.source = source;
@@ -106,12 +109,4 @@ $(document).ready(function(){
         return false;
     }
 
-    //生成预埋cookie
-    //function setCookie(c_name,value,expiredays)
-    //{
-    //    var exdate=new Date();
-    //    exdate.setDate(exdate.getDate()+expiredays)
-    //    document.cookie=c_name+ "=" +escape(value)+
-    //        ((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
-    //}
 });

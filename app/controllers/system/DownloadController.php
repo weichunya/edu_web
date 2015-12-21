@@ -11,7 +11,8 @@ namespace Laravel\Controller\System;			// 定义命名空间
 use ApiController;							//引入接口公共父类，用于继承
 use Illuminate\Support\Facades\View;		//引入视图类
 use Illuminate\Support\Facades\Input;		//引入参数类
-use Illuminate\Support\Facades\Session;		//引入session 
+use Illuminate\Support\Facades\Session;		//引入session
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Response;	//引入response
 
 use Laravel\Model\ShopModel;
@@ -25,6 +26,7 @@ use Illuminate\Support\Facades\Log;//引入日志类
 class DownloadController extends ApiController {
 	public function __construct(){
 		parent::__construct();
+		$this->nowDateTime = date('Y-m-d H:i:s');
 	}
 
 	/**
@@ -33,6 +35,8 @@ class DownloadController extends ApiController {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function getApp() {
+		$sessionId = Session::getId();
+		Log::info("shop_qrCode_sessionId ".$sessionId);
 
 		$data = array();
 		$data[ 'shopId' ] = Input::has( 'shopId' )?Input::get( 'shopId' ):0;
@@ -40,6 +44,8 @@ class DownloadController extends ApiController {
 		$data[ 'shareType' ] = '1';//shareType 推广类型 1:商家推广 2:用户推广
 		$data[ 'activityId' ] = '1';
 		$data[ 'source' ] = 1;
+		$data[ 'sessionId' ] = $sessionId;
+		Log::info($data);
 		return Response::view('system.download', $data);
 	}
 
