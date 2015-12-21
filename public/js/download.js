@@ -12,14 +12,31 @@ $(document).ready(function(){
     var source = $('#source').val();
     var sessionId = $('#sessionId').val();
 
+    $.extend({
+        getUrlVars: function(){
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for(var i = 0; i < hashes.length; i++){
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        },
+        getUrlVar: function(name){
+            return $.getUrlVars()[name];
+        }
+    });
+
     var array = {
-        'shopId' : shopId,
-        'scene' : scene,
         'os_type' : os_type,
         'channel' : channel,
         'source' : source,
         'sessionId' : sessionId
     }
+    $.each($.getUrlVars(), function (n,value) {
+        array[value] = $.getUrlVar(value);
+    });
     $.post('/system/download/record-num',array,null,'json');
 
     $('.get_money').bind('click' , function(){
@@ -72,8 +89,9 @@ $(document).ready(function(){
         data.os_type = os_type;
         data.source = source;
         if(shareType == '1'){
-            data.shopId = shopId;
-            data.scene = scene;
+            $.each($.getUrlVars(), function (n,value) {
+                data[value] = $.getUrlVar(value);
+            });
         } else {
             data.userId = userId;
             data.channel = channel;
