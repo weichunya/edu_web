@@ -32,7 +32,8 @@ $(document).ready(function(){
         'os_type' : os_type,
         'channel' : channel,
         'source' : source,
-        'sessionId' : sessionId
+        'sessionId' : sessionId,
+        'user_agent' : navigator.userAgent
     }
     $.each($.getUrlVars(), function (n,value) {
         array[value] = $.getUrlVar(value);

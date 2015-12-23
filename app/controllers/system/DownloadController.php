@@ -79,6 +79,7 @@ class DownloadController extends ApiController {
 	 */
 	public function getAppOne(){
 		$os_type = Input::has( 'os_type' )?Input::get('os_type'):1;
+		$tel = Input::get( 'tel' );
 		$clientM = new ClientModel();
 		$list = $clientM->getLatelyAppUrl($os_type);
 
@@ -87,6 +88,7 @@ class DownloadController extends ApiController {
 			$url = $list[0]->url;
 			Log::info($url);
 			$data['url'] = $url;
+			$data['tel'] = $tel;
 		}
 		return Response::view('system.download_one' , $data);
 	}
@@ -105,6 +107,14 @@ class DownloadController extends ApiController {
 		return Response::json($this->response);
 	}
 
+//	/**
+//	 * 记录下载次数
+//	 */
+//	public function anyRecordDownloadItem(){
+//		$data = array();
+//
+//	}
+
 	/**
 	 * 记录扫码数
 	 * @return \Illuminate\Http\JsonResponse
@@ -118,7 +128,11 @@ class DownloadController extends ApiController {
 		$data[ 'os_type' ] = Input::has( 'os_type' )?Input::get( 'os_type' ):1;
 		$data[ 'channel' ] = Input::has( 'channel' )?Input::get( 'channel' ):7;
 		$data[ 'source' ] = Input::get( 'source' );
-		$data['create_time'] = date('Y-m-d H:i:s');
+		$data[ 'cookie' ] = Input::get( 'sessionId' );
+		$data[ 'user_agent' ] = Input::get( 'user_agent' );
+		$data[ 'create_time' ] = date('Y-m-d H:i:s');
+		$data[ 'user_ip' ] = Request::ip();
+
 		$res = $shopM->addShopShareScan($data);
 		if($res){
 			return Response::json($this->response(1));
@@ -132,6 +146,5 @@ class DownloadController extends ApiController {
 	public function getDownloadDirect(){
 		return Response::view('system.download_direct');
 	}
-
 
 }

@@ -29,17 +29,17 @@
 	    		<p>
 	    			<button class="get_app">下载APP</button>
 					<input id="download_url" type="hidden" value="{{ $url or 'http://7xlbf0.com1.z0.glb.clouddn.com/DuoBaoHui_alipay_11_3.apk' }}"/>
+					<input type="hidden" id="tel" value="{{ $tel }}" />
 	    		</p>
 	    		</div>
 	    	</div>
     	</div>
 
-
-
-
-
    		<script type="text/javascript">
    			$(document).ready(function(){
+
+				var telVal = $('#tel').val();
+				alert(telVal);
 
      			var winHeight = $(window).height();
 				setWinWidth(winHeight);
@@ -54,7 +54,6 @@
    						}else{
    							window.location.href = download_url.val()+'?'+Math.random();
    						}
-   						
    					}
    				});
 
