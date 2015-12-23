@@ -55,6 +55,9 @@ class DownloadController extends ApiController {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function getShare() {
+		$sessionId = Session::getId();
+		Log::info("user_friends_sessionId ".$sessionId);
+
 		$data = array();
 		$data[ 'userId' ] = Input::has( 'userId' )?Input::get( 'userId' ):0;
 		$data[ 'channel' ] = Input::has( 'channel' )?Input::get( 'channel' ):2;
@@ -70,6 +73,7 @@ class DownloadController extends ApiController {
 		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
 		$data[ 'shareType' ] = '2';//shareType 推广类型 1:商家推广 2:用户推广
 		$data[ 'activityId' ] = '1';
+		$data[ 'sessionId' ] = $sessionId;
 		return Response::view('system.download', $data);
 	}
 
