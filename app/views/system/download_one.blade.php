@@ -39,7 +39,6 @@
    			$(document).ready(function(){
 
 				var telVal = $('#tel').val();
-				alert(telVal);
 
      			var winHeight = $(window).height();
 				setWinWidth(winHeight);
