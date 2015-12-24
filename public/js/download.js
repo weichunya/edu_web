@@ -49,15 +49,22 @@ $(document).ready(function(){
             var data = getData(shareType,phoneNumber);
             var callback = function(res){
                 if(res.code == 20503){
-                    window.location.href="/system/download/app-one?os_type="+os_type;
+                    //window.location.href="/system/download/app-one?os_type="+os_type;
+                    goDownload();
                 }else{
                     alert(res.msg);
-                    window.location.href="/system/download/app-one?os_type="+os_type;
+                    //window.location.href="/system/download/app-one?os_type="+os_type;
+                    goDownload();
                 }
             }
             $.get(url , data , callback , 'json');
         }
     });
+
+    function goDownload(){
+        var phoneNumber = $('.phone').val();
+        window.location.href="/system/download/app-one?os_type="+os_type+"&tel="+phoneNumber+"&shopId="+shopId+"&scene="+scene+"&channel="+channel+"&source"+source;
+    }
 
     function setWinWidth(winHeight) {
         var img_url = 'http://7xlbf0.com1.z0.glb.clouddn.com/dbh_bg_1.jpg';

@@ -30,6 +30,11 @@
 	    			<button class="get_app">下载APP</button>
 					<input id="download_url" type="hidden" value="{{ $url or 'http://7xlbf0.com1.z0.glb.clouddn.com/DuoBaoHui_alipay_11_3.apk' }}"/>
 					<input type="hidden" id="tel" value="{{ $tel }}" />
+					<input id="shopId" type="hidden" value="{{ $shopId or '-1' }}"/>
+					<input id="scene" type="hidden" value="{{ $scene or '1' }}"/>
+					<input id="channel" type="hidden" value="{{ $channel or '7' }}"/>
+					<input id="source" type="hidden" value="{{ $source or '1' }}"/>
+					<input id="os_type" type="hidden" value="{{ $os_type or '1' }}"/>
 	    		</p>
 	    		</div>
 	    	</div>
@@ -39,6 +44,11 @@
    			$(document).ready(function(){
 
 				var telVal = $('#tel').val();
+				var shopId = $('#shopId').val();
+				var scene = $('#scene').val();
+				var channel = $('#channel').val();
+				var source = $('#source').val();
+				var os_type = $('#os_type').val();
 
      			var winHeight = $(window).height();
 				setWinWidth(winHeight);
@@ -52,9 +62,24 @@
    							alert("iPhone客户端正在研发中...敬请期待！");
    						}else{
    							window.location.href = download_url.val()+'?'+Math.random();
+							postDownloadNum();
    						}
    					}
    				});
+
+
+				function postDownloadNum(){
+					var array = {
+						'shopId' : shopId,
+						'scene' : scene,
+						'os_type' : os_type,
+						'user_agent' : navigator.userAgent,
+						'phone_num' : telVal,
+						'channel' : channel,
+						'source' : source
+					}
+					$.post('/system/download/record-download-item',array,null,'json');
+				}
 
 				function setWinWidth(winHeight) {
 					var img_url = 'http://7xlbf0.com1.z0.glb.clouddn.com/dbh_bg_2.jpg';

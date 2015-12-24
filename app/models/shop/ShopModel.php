@@ -26,6 +26,11 @@ class ShopModel extends Model {
         return $id;
     }
 
+    // 添加
+    public function addShopDownload($data)
+    {
+        return DB::table("shop_download")->insertGetId($data);
+    }
 
 }
 

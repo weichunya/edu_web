@@ -84,6 +84,11 @@ class DownloadController extends ApiController {
 	public function getAppOne(){
 		$os_type = Input::has( 'os_type' )?Input::get('os_type'):1;
 		$tel = Input::get( 'tel' );
+		$shopId = Input::get( 'shopId' );
+		$scene = Input::get( 'scene' );
+		$channel = Input::get( 'channel' );
+		$source = Input::get( 'source' );
+
 		$clientM = new ClientModel();
 		$list = $clientM->getLatelyAppUrl($os_type);
 
@@ -93,6 +98,12 @@ class DownloadController extends ApiController {
 			Log::info($url);
 			$data['url'] = $url;
 			$data['tel'] = $tel;
+			$data['shopId'] = $shopId;
+			$data['scene'] = $scene;
+			$data['channel'] = $channel;
+			$data['source'] = $source;
+			$data['os_type'] = $os_type;
+			Log::info($data);
 		}
 		return Response::view('system.download_one' , $data);
 	}
@@ -111,13 +122,31 @@ class DownloadController extends ApiController {
 		return Response::json($this->response);
 	}
 
-//	/**
-//	 * 记录下载次数
-//	 */
-//	public function anyRecordDownloadItem(){
-//		$data = array();
-//
-//	}
+	/**
+	 * 记录下载次数
+	 */
+	public function anyRecordDownloadItem(){
+		$data = array();
+		$shopM = new ShopModel();
+
+		$data[ 'sh_shop_id' ] = Input::has( 'shopId' )?Input::get( 'shopId' ):0;
+		$data[ 'phone_num' ] = Input::get( 'phone_num' );
+		$data[ 'scene' ] = Input::has( 'scene' )?Input::get( 'scene' ):1;
+		$data[ 'os_type' ] = Input::has( 'os_type' )?Input::get( 'os_type' ):1;
+		$data[ 'user_agent' ] = Input::get( 'user_agent' );
+		$data[ 'channel' ] = Input::has( 'channel' )?Input::get( 'channel' ):7;
+		$data[ 'source' ] = Input::get( 'source' );
+		$data[ 'cookie' ] = Session::getId();
+		$data[ 'create_time' ] = date('Y-m-d H:i:s');
+		$data[ 'user_ip' ] = Request::ip();
+
+		$res = $shopM->addShopDownload($data);
+		if($res){
+			return Response::json($this->response(1));
+		}
+		return Response::json($this->response(0));
+
+	}
 
 	/**
 	 * 记录扫码数
