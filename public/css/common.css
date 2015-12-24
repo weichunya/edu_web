@@ -89,6 +89,24 @@ nav .sub_tag {
     font-size: 2.4em;
 }
 
+.nav_active{
+    background-color: #13A083;
+    color: #ffffff !important;
+    height: 70px;
+}
+
+.hide{
+    display: none;
+}
+
+/*.sub_tag a:link{*/
+    /**/
+/*}*/
+
+/*.sub_tag a:hover{*/
+    /*background-color: #13A083;*/
+/*}*/
+
 div .videos {
     width: 100%;
     height: auto;
