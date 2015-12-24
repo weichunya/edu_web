@@ -54,8 +54,8 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
- 			'host'      => '123.56.157.137',
- 			'database'  => 'sh_duobaohui',
+ 			'host'      => 'rdsqswhmjfiys87frepua.mysql.rds.aliyuncs.com:3306',
+ 			'database'  => 'sh_eduonline',
  			'username'  => 'shihe',
  			'password'  => 'shinc123456',
 		    

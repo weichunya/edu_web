@@ -1,0 +1,539 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei";
+}
+
+body{
+    font-size: 62.5%;
+}
+
+ul,li{
+    margin:0;
+    padding:0
+}
+
+header div, nav .tags, .problems_content, .program_three,.workflow,.workflow_img_content,.videos_content {
+    width: 80%;
+    max-width: 1000px;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    margin: -65px auto 0 auto;
+    color: #AEB2B1;
+    position: fixed;
+    z-index: 99;
+    background-color: #ffffff;
+}
+
+header div{
+    margin: 0 auto;
+}
+
+header div .item {
+    float: right;
+    height: 100%;
+    line-height: 65px;
+    width: auto;
+    margin: 0 20px 0 10px;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+header a:link{
+    color: #AEB2B1;
+}
+
+header a:visited{
+    color: #AEB2B1;
+}
+
+header a:hover{
+    color: #0ED2B0;
+}
+
+header a:active{
+    color: #0ED2B0;
+}
+
+header .active {
+    color: #0ED2B0;
+}
+
+.carousel {
+    height: 436px;
+    width: 100%;
+    margin-top: 65px;
+}
+
+nav {
+    height: 70px;
+    background-color: #38d3b2;
+}
+
+nav .tags {
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav .sub_tag {
+    float: left;
+    color: #14a083;
+    line-height: 70px;
+    width: 11%;
+    text-align: center;
+    font-size: 2.4em;
+}
+
+div .videos {
+    width: 100%;
+    height: auto;
+}
+
+div .video_row {
+    margin: 0 auto;
+    height: auto;
+}
+
+div .video_blue {
+    background-color: #f2faf8;
+}
+
+.video_one{
+    float:left;
+    margin:20px 10px;
+    color:#AEB2B1;
+}
+
+.video_pic{
+    height: 176px;
+    background-color: #1b6d85;
+}
+
+.video_pic,.video_title{
+    width: 313px;
+}
+
+.video_one img{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video_title{
+    font-size: 1.8em;
+    margin-top:20px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.video_teacher_name,.video_teacher_grade{
+    float: left;
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+
+.video_teacher_grade{
+    margin-left: 50px;
+}
+
+footer {
+    background-color: #38d3b2;
+    height: 145px;
+    margin: 0;
+}
+
+.problems {
+    background-color: #EEF4F3;
+    height: auto;
+}
+
+.problems_content {
+    margin: 0 auto;
+    height: auto;
+    font-family: "SimHei";
+    font-family: "STHeiti Light";
+}
+
+.problems_padding1 {
+    height: 60px;
+}
+
+.problems_title {
+    color: #38d3b2;
+    font-size: 6.2em;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    margin-top: 0px !important;
+}
+
+.problems_items {
+    margin-top: 40px;
+    color: #ffffff;
+    line-height: 28px;
+}
+
+.bar1_left, .bar1_right, .bar2_left, .bar2_right, .bar3_left, .bar3_right, .bar4_left, .bar4_right, .bar5_left, .bar5_right {
+    height: 28px;
+    margin-top: 10px;
+    font-size: 1.8em;
+}
+
+.bar1_left, .bar1_right {
+    width: 370px;
+}
+
+.bar2_left, .bar2_right {
+    width: 340px;
+}
+
+.bar3_left, .bar3_right {
+    width: 310px;
+}
+
+.bar4_left, .bar4_right {
+    width: 280px;
+}
+
+.bar5_left, .bar5_right {
+    width: 250px;
+}
+
+.bar1_left, .bar2_left, .bar3_left, .bar4_left, .bar5_left {
+    border-radius: 14px 0 0 14px;
+    padding-right: 10px;
+}
+
+.bar1_right, .bar2_right, .bar3_right, .bar4_right, .bar5_right {
+    border-radius: 0 14px 14px 0;
+    padding-left: 10px;
+}
+
+.bar1_left {
+    background-color: #38d3b2;
+}
+
+.bar1_right {
+    background-color: #ff9e00;
+}
+
+.bar2_left {
+    background-color: #4ab4c1;
+}
+
+.bar2_right {
+    background-color: #ff8a1e;
+}
+
+.bar3_left {
+    background-color: #5c95d0;
+}
+
+.bar3_right {
+    background-color: #ff763c;
+}
+
+.bar4_left {
+    background-color: #6d77e0;
+}
+
+.bar4_right {
+    background-color: #fe615a;
+}
+
+.bar5_left {
+    background-color: #9139fe;
+}
+
+.bar5_right {
+    background-color: #fe3996;
+}
+
+.program{
+    margin: 0 auto;
+    height: auto;
+    font-family: "SimHei";
+    font-family: "STHeiti Light";
+}
+
+.program_padding{
+    height: 60px;
+    width:100%
+}
+
+.program_title{
+    font-size: 6.2em;
+    color: #ED6D47;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.program_title_sub{
+    margin-top: 1em;
+}
+
+.program_title_sub_detail{
+    margin: 0 auto;
+    width: 300px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #ED6D47;
+    border-radius: 14px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.6em;
+}
+
+.program_content{
+    margin-top: 30px;
+}
+
+.program_content_words{
+    background-color: #fbe2da;
+    height: auto;
+    line-height: 2.3;
+    margin:0 auto;
+    color: #868483;
+    padding: 15px 30px;
+    font-size: 1.5em;
+}
+
+.program_three{
+    margin: 20px auto 0 auto;
+}
+
+.program_three_left,.program_three_right,.program_three_main{
+    width: 33.33%;
+}
+
+.program_three_left{
+    float:left;
+}
+
+.program_three_left_img{
+    text-align: center;
+}
+
+.program_three_right{
+    float:right;
+}
+.program_three_main{
+    margin-left: 33.33%;
+}
+.program_three_title{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3em;
+    color: #044470;
+    font-weight: bold;
+}
+.program_three_title_sub{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.8em;
+    color: #ED6D47;
+}
+.program_three_title_detail{
+    width: 95%;
+    margin: 10px auto 0 auto;
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+
+.program_three_title_detail span{
+    color: #7d7d7d;
+}
+
+.program_three_title_detail ul li{
+    list-style-type: square;
+    color: #ED6D46;
+}
+
+.clear{
+    clear: both;
+}
+
+.workflow{
+    margin: 0 auto;
+    color: #7d7d7d;
+    font-size: 1.6em;
+}
+
+.workflow_img{
+    background-color: #ff7058;
+    margin-top: 10px;
+    width: 100%;
+    height: 330px;
+}
+
+.workflow_img_content{
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.common_box{
+    width: 100%;
+    height: auto;
+}
+
+.common_padding{
+    width:100%;
+    height:60px;
+}
+
+.common_title{
+    width: 100%;
+    color: #5cc2ed;
+    font-size: 6em;
+    text-align: center;
+    font-family: "STHeiti Light";
+}
+
+.common_title_sub{
+    width: 300px;
+    height: 28px;
+    margin:10px auto 0 auto;
+    background-color: #5cc2ed;
+    border-radius: 14px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 1.6em;
+    color: #ffffff;
+}
+
+.program_content_words,.common_content_words,.common_list{
+    width: 80%;
+    max-width: 860px;
+}
+
+.common_content_words{
+    margin: 30px auto 0 auto;
+    background-color: #def3fb;
+    color: #7d7d7d;
+    font-size: 1.5em;
+    line-height: 2.3;
+    padding: 15px 30px;
+}
+
+.common_list{
+    margin:0 auto;
+}
+
+.common_list ul li{
+    list-style-type: none;
+}
+
+.common_list ol li, .common_list ul li{
+    font-size: 2.2em;
+    margin-top: 20px;
+    color: #7d7d7d;
+}
+
+.common_list ol li div,.common_list ul li div{
+    font-size: 0.636em;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.common_list ul li div{
+    padding-left: 15px;
+}
+
+.elephant{
+    width: 100%;
+    background-color: #EEF4F3;
+}
+
+.font_orange{
+    color: #ff9e00;
+}
+
+.bg_orange{
+    background-color: #ff9e00;
+}
+
+.partner_logos{
+    width:auto;
+    height:auto;
+    margin: 15px auto 0 auto;
+    text-align: center;
+}
+
+.partner_logos span{
+    margin:0 auto;
+}
+
+.partner_logos_item{
+    float: left;
+}
+
+.workflow_img_sub,.workflow_img_right{
+    float: left;
+}
+
+.workflow_img_right{
+    width: 50px;
+    text-align: center;
+    height: 330px;
+}
+
+.workflow_img_right img{
+    margin-top: 95px;
+    width: 50px;
+    height: 14px;
+}
+
+.circle{
+    width: 116px;
+    height: 116px;
+    border-radius: 68px;
+    margin-top: 40px;
+    background-color: #ff7058;
+    border: 2px solid #ffffff;
+}
+
+.circle_num,.circle_words{
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.circle_num img{
+    margin-top: 25px;
+}
+
+.circle_num{
+    height: 58px;
+    vertical-align: bottom;
+}
+
+.circle_words{
+    margin-top: 10px;
+    height: 68px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cricle_desc{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.videos_content{
+    height: 100%;
+    margin: 0 auto;
+}
+

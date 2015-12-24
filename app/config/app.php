@@ -198,7 +198,7 @@ return array(
 	'qiniu_backup'		=> 'imgs',
 	'qiniu_expires'		=> 3600,
 
-	'Cookie-Key'		=> 'duobaohui_admin',
+	'Cookie-Key'		=> 'eduonline_web',
 	'Cookie-Expired-Time' => 36000,
 
 );

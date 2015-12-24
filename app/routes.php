@@ -13,15 +13,5 @@ use Illuminate\Support\Facades\Redirect;
 | and give it the Closure to execute when that URI is requested.
 |
 */
-//活动
-Route::group( array('prefix' => 'activity'),function() {
-    Route::controller('/share', 'Laravel\Controller\Activity\ShareController');
-    Route::controller('/rule', 'Laravel\Controller\Activity\RuleController');
-});
-
-// 系统
-Route::group( array('prefix' => '/system'),function() {
-    Route::controller('/download', 'Laravel\Controller\System\DownloadController');
-});
 
 Route::controller('/', 'Laravel\Controller\Index\IndexController');
