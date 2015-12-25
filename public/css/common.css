@@ -81,6 +81,11 @@ nav .tags {
     margin: 0 auto;
 }
 
+.sub_tag:hover{
+    color:#ffffff;
+    background-color: #13A083;
+}
+
 nav .sub_tag {
     float: left;
     color: #14a083;
