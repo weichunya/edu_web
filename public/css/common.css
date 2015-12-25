@@ -7,7 +7,8 @@ html, body {
 }
 
 body{
-    font-size: 62.5%;
+    font-size: 100%;
+    /*font-size: 62.5%;*/
 }
 
 ul,li{
@@ -129,7 +130,7 @@ div .video_blue {
 
 .video_pic{
     height: 176px;
-    background-color: #1b6d85;
+    /*background-color: #1b6d85;*/
 }
 
 .video_pic,.video_title{
@@ -151,6 +152,24 @@ div .video_blue {
     word-wrap: break-word;
     word-break: break-all;
 }
+
+.video_title a:link{
+    color: #AEB2B1;
+    text-decoration: none;
+}
+
+.video_title a:visited{
+    color: #AEB2B1;
+}
+
+.video_title a:hover{
+    color: #38d3b2;
+}
+
+.video_title a:active{
+    color: #38d3b2;
+}
+
 
 .video_teacher_name,.video_teacher_grade{
     float: left;
@@ -554,4 +573,32 @@ footer {
     height: 100%;
     margin: 0 auto;
 }
+
+.banner {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:900;
+    width:100%;
+    padding: 9px 20px;
+    font-weight: 400;
+    font-size: 1.6em;
+    color: #FFF;
+    background-color: #000;
+    opacity:0.6;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.banner .banner-title {
+    position: relative;
+    z-index:999;
+}
+.banner_show{
+    display: block;
+}
+.banner_hide{
+    display: none;
+}
+
 

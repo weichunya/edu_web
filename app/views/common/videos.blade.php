@@ -5,7 +5,9 @@
             @foreach ($yuwen as $video)
                 <div class="video_one">
                     <div class="video_pic"><img src="{{$video->pic}}"/></div>
-                    <div class="video_title">{{$video->title}}</div>
+                    <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <a href="javascript:void(0);">{{$video->title}}</a>
+                    </div>
                     <div class="video_teacher">
                         <div class="video_teacher_name">讲师：{{$video->name}}</div>
                         {{--<div class="video_teacher_grade">年级：初一</div>--}}
