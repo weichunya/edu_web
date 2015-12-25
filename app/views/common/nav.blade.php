@@ -1,6 +1,6 @@
 <nav>
     <div class="tags">
-        <a href="javascript:void(0);"><div class="sub_tag" name="yuwen">语文</div></a>
+        <a href="javascript:void(0);"><div class="sub_tag nav_active" name="yuwen">语文</div></a>
         <a href="javascript:void(0);"><div class="sub_tag" name="shuxue">数学</div></a>
         <a href="javascript:void(0);"><div class="sub_tag" name="yingyu">英语</div></a>
         <a href="javascript:void(0);"><div class="sub_tag" name="wuli">物理</div></a>
