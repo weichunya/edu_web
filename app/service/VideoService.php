@@ -30,7 +30,9 @@ class VideoService {
     public function getVideos($course){
         $list = $this->videoM->getVideos($this->$course);
         foreach($list as $item){
-            $item->pic = self::QiNiu_EduOnline_Domain.$item->pic;
+            if($item->pic){
+                $item->pic = self::QiNiu_EduOnline_Domain.$item->pic;
+            }
         }
         return $list;
     }

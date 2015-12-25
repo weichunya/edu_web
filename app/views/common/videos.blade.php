@@ -2,9 +2,11 @@
 <div class="videos" name="pannel_yuwen">
     <div class="video_row">
         <div class="videos_content">
-            @foreach ($yuwen as $video)
+            @foreach ($yuwen as $index=>$video)
                 <div class="video_one">
-                    <div class="video_pic"><img src="{{$video->pic}}"/></div>
+                    <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                    </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
                     </div>
@@ -23,10 +25,14 @@
 <div class="videos hide" name="pannel_shuxue">
     <div class="video_row">
         <div class="videos_content">
-            @foreach ($shuxue as $video)
+            @foreach ($shuxue as $index=>$video)
                 <div class="video_one">
-                    <div class="video_pic"><img src="{{$video->pic}}"/></div>
-                    <div class="video_title">{{$video->title}}</div>
+                    <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                    </div>
+                    <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <a href="javascript:void(0);">{{$video->title}}</a>
+                    </div>
                     <div class="video_teacher">
                         <div class="video_teacher_name">讲师：{{$video->name}}</div>
                         {{--<div class="video_teacher_grade">年级：初一</div>--}}
@@ -42,10 +48,14 @@
 <div class="videos hide" name="pannel_yingyu">
     <div class="video_row">
         <div class="videos_content">
-            @foreach ($yingyu as $video)
+            @foreach ($yingyu as $index=>$video)
                 <div class="video_one">
-                    <div class="video_pic"><img src="{{$video->pic}}"/></div>
-                    <div class="video_title">{{$video->title}}</div>
+                    <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                    </div>
+                    <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <a href="javascript:void(0);">{{$video->title}}</a>
+                    </div>
                     <div class="video_teacher">
                         <div class="video_teacher_name">讲师：{{$video->name}}</div>
                         {{--<div class="video_teacher_grade">年级：初一</div>--}}
@@ -61,10 +71,14 @@
 <div class="videos hide" name="pannel_wuli">
     <div class="video_row">
         <div class="videos_content">
-            @foreach ($wuli as $video)
+            @foreach ($wuli as $index=>$video)
                 <div class="video_one">
-                    <div class="video_pic"><img src="{{$video->pic}}"/></div>
-                    <div class="video_title">{{$video->title}}</div>
+                    <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                    </div>
+                    <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <a href="javascript:void(0);">{{$video->title}}</a>
+                    </div>
                     <div class="video_teacher">
                         <div class="video_teacher_name">讲师：{{$video->name}}</div>
                         {{--<div class="video_teacher_grade">年级：初一</div>--}}
@@ -80,10 +94,14 @@
 <div class="videos hide" name="pannel_huaxue">
     <div class="video_row">
         <div class="videos_content">
-            @foreach ($huaxue as $video)
+            @foreach ($huaxue as $index=>$video)
                 <div class="video_one">
-                    <div class="video_pic"><img src="{{$video->pic}}"/></div>
-                    <div class="video_title">{{$video->title}}</div>
+                    <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                    </div>
+                    <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <a href="javascript:void(0);">{{$video->title}}</a>
+                    </div>
                     <div class="video_teacher">
                         <div class="video_teacher_name">讲师：{{$video->name}}</div>
                         {{--<div class="video_teacher_grade">年级：初一</div>--}}
@@ -99,10 +117,14 @@
 <div class="videos hide" name="pannel_dili">
     <div class="video_row">
         <div class="videos_content">
-            @foreach ($dili as $video)
+            @foreach ($dili as $index=>$video)
                 <div class="video_one">
-                    <div class="video_pic"><img src="{{$video->pic}}"/></div>
-                    <div class="video_title">{{$video->title}}</div>
+                    <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                    </div>
+                    <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <a href="javascript:void(0);">{{$video->title}}</a>
+                    </div>
                     <div class="video_teacher">
                         <div class="video_teacher_name">讲师：{{$video->name}}</div>
                         {{--<div class="video_teacher_grade">年级：初一</div>--}}
@@ -118,10 +140,14 @@
 <div class="videos hide" name="pannel_zhengzhi">
     <div class="video_row">
         <div class="videos_content">
-            @foreach ($zhengzhi as $video)
+            @foreach ($zhengzhi as $index=>$video)
                 <div class="video_one">
-                    <div class="video_pic"><img src="{{$video->pic}}"/></div>
-                    <div class="video_title">{{$video->title}}</div>
+                    <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                    </div>
+                    <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
+                        <a href="javascript:void(0);">{{$video->title}}</a>
+                    </div>
                     <div class="video_teacher">
                         <div class="video_teacher_name">讲师：{{$video->name}}</div>
                         {{--<div class="video_teacher_grade">年级：初一</div>--}}
@@ -133,6 +159,7 @@
         </div>
     </div>
 </div>
+
 <!-- videos end -->
 
 <!-- videos begin -->

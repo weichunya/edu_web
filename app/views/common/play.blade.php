@@ -16,8 +16,8 @@
                         {{--@endif--}}
                     {{--@endforeach--}}
 
-                    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"/><!-- Tracks need an ending tag thanks to IE9 -->
-                    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"/><!-- Tracks need an ending tag thanks to IE9 -->
+                    <track kind="captions" src="js/video-js/demo.captions.vtt" srclang="en" label="English"/><!-- Tracks need an ending tag thanks to IE9 -->
+                    <track kind="subtitles" src="js/video-js/demo.captions.vtt" srclang="en" label="English"/><!-- Tracks need an ending tag thanks to IE9 -->
                     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
                 </video>
             </div>

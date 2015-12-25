@@ -41,21 +41,27 @@ $(document).ready(function(){
     });
 
     $('.video_title').bind('click',function(){
-        var video_url = $(this).attr('videoAddr');
-        var picUrl = $(this).attr('picUrl');
-        var videoTitle = $(this).attr('videoTitle');
+        play($(this));
+    });
+
+    $('.video_pic').bind('click',function(){
+        play($(this));
+    });
+
+    playModel.on('hidden.bs.modal', function(e) {
+        myPlayer.pause();
+    });
+
+    function play(obj){
+        var video_url = obj.attr('videoAddr');
+        var picUrl = obj.attr('picUrl');
+        var videoTitle = obj.attr('videoTitle');
         banner_title.text(videoTitle);
         myPlayer.poster(picUrl);
         myPlayer.src(video_url);
         myPlayer.load();
         playModel.modal('show');
-    });
-
-    //模态框隐藏时，视频播放器清空
-    playModel.on('hidden.bs.modal', function(e) {
-        myPlayer.pause();
-        console.log('player model hide');
-    });
+    }
 
     function changeVideoPannel(obj){
         $('.videos').hide();
