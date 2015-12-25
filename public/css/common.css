@@ -81,9 +81,11 @@ nav .tags {
     margin: 0 auto;
 }
 
-.sub_tag:hover{
+nav .sub_tag:hover{
     color:#ffffff;
     background-color: #13A083;
+    border-left: 1px solid #38d3b2;
+    border-right: 1px solid #38d3b2;
 }
 
 nav .sub_tag {
