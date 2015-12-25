@@ -17,8 +17,8 @@ ul,li{
 }
 
 header div, nav .tags, .problems_content, .program_three,.workflow,.workflow_img_content,.videos_content {
-    width: 80%;
-    max-width: 1000px;
+    /*width: 80%;*/
+    width: 1000px;
 }
 
 header {
