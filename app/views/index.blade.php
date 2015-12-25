@@ -112,91 +112,102 @@
 <div class="workflow">
     特色微课定制流程
 </div>
-<div class="workflow_img">
+<div class="row workflow_img">
     <div class="workflow_img_content">
-        <div style="overflow:hidden; display:inline-block;"></div>
-        <div class="workflow_img_sub">
-            <div class="circle">
-                <div class="circle_num"><img src="/img/pic_1.png" width="12" height="29"/></div>
-                <div class="circle_words">课程策划</div>
+        <div class="col-sm-4 col-md-2 workflow_img_padding">
+            <div class="workflow_img_sub">
+                <div class="circle">
+                    <div class="circle_num"><img src="/img/pic_1.png" width="12" height="29"/></div>
+                    <div class="circle_words">课程策划</div>
+                </div>
+                <div class="cricle_desc">
+                    策化课程大纲<br>
+                    设计课程体系<br>
+                    规划授课内容<br>
+                    制作课程文案
+                </div>
             </div>
-            <div class="cricle_desc">
-                策化课程大纲<br>
-                设计课程体系<br>
-                规划授课内容<br>
-                制作课程文案
-            </div>
-        </div>
-        <div class="workflow_img_right">
-            <img src="/img/pic_箭头.png" width="12" height="29"/>
-        </div>
-        <div class="workflow_img_sub">
-            <div class="circle">
-                <div class="circle_num"><img src="/img/pic_2.png" width="20" height="30"/></div>
-                <div class="circle_words">课程策划</div>
-            </div>
-            <div class="cricle_desc">
-                策化课程大纲<br>
-                设计课程体系<br>
-                规划授课内容<br>
-                制作课程文案
+            <div class="workflow_img_right">
+                <img src="/img/pic_箭头.png" width="12" height="29"/>
             </div>
         </div>
-        <div class="workflow_img_right">
-            <img src="/img/pic_箭头.png" width="12" height="29"/>
-        </div>
-        <div class="workflow_img_sub">
-            <div class="circle">
-                <div class="circle_num"><img src="/img/pic_3.png" width="20" height="30"/></div>
-                <div class="circle_words">课程策划</div>
+        <div class="col-sm-4 col-md-2 workflow_img_padding">
+            <div class="workflow_img_sub">
+                <div class="circle">
+                    <div class="circle_num"><img src="/img/pic_2.png" width="20" height="30"/></div>
+                    <div class="circle_words">拍摄准备</div>
+                </div>
+                <div class="cricle_desc">
+                    策化课程大纲<br>
+                    设计课程体系<br>
+                    规划授课内容<br>
+                    制作课程文案
+                </div>
             </div>
-            <div class="cricle_desc">
-                策化课程大纲<br>
-                设计课程体系<br>
-                规划授课内容<br>
-                制作课程文案
-            </div>
-        </div>
-        <div class="workflow_img_right">
-            <img src="/img/pic_箭头.png" width="12" height="29"/>
-        </div>
-        <div class="workflow_img_sub">
-            <div class="circle">
-                <div class="circle_num"><img src="/img/pic_4.png" width="20" height="30"/></div>
-                <div class="circle_words">课程策划</div>
-            </div>
-            <div class="cricle_desc">
-                策化课程大纲<br>
-                设计课程体系<br>
-                规划授课内容<br>
-                制作课程文案
+            <div class="workflow_img_right">
+                <img src="/img/pic_箭头.png" width="12" height="29"/>
             </div>
         </div>
-        <div class="workflow_img_right">
-            <img src="/img/pic_箭头.png" width="12" height="29"/>
-        </div>
-        <div class="workflow_img_sub">
-            <div class="circle">
-                <div class="circle_num"><img src="/img/pic_5.png" width="20" height="30"/></div>
-                <div class="circle_words">课程策划</div>
+        <div class="col-sm-4 col-md-2 workflow_img_padding">
+            <div class="workflow_img_sub">
+                <div class="circle">
+                    <div class="circle_num"><img src="/img/pic_3.png" width="20" height="30"/></div>
+                    <div class="circle_words">视频拍摄</div>
+                </div>
+                <div class="cricle_desc">
+                    策化课程大纲<br>
+                    设计课程体系<br>
+                    规划授课内容<br>
+                    制作课程文案
+                </div>
             </div>
-            <div class="cricle_desc">
-                策化课程大纲<br>
-                设计课程体系<br>
-                规划授课内容<br>
-                制作课程文案
-            </div>
-        </div>
-        <div class="workflow_img_right">
-            <img src="/img/pic_箭头.png" width="12" height="29"/>
-        </div>
-        <div class="workflow_img_sub">
-            <div class="circle">
-                <div class="circle_num"><img src="/img/pic_6.png" width="20" height="30"/></div>
-                <div class="circle_words">课程策划</div>
+            <div class="workflow_img_right">
+                <img src="/img/pic_箭头.png" width="12" height="29"/>
             </div>
         </div>
-        <div class="clear"></div>
+
+        <div class="col-sm-4 col-md-2 workflow_img_padding">
+            <div class="workflow_img_sub">
+                <div class="circle">
+                    <div class="circle_num"><img src="/img/pic_4.png" width="20" height="30"/></div>
+                    <div class="circle_words">视频剪辑</div>
+                </div>
+                <div class="cricle_desc">
+                    策化课程大纲<br>
+                    设计课程体系<br>
+                    规划授课内容<br>
+                    制作课程文案
+                </div>
+            </div>
+            <div class="workflow_img_right">
+                <img src="/img/pic_箭头.png" width="12" height="29"/>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-2 workflow_img_padding">
+            <div class="workflow_img_sub">
+                <div class="circle">
+                    <div class="circle_num"><img src="/img/pic_5.png" width="20" height="30"/></div>
+                    <div class="circle_words">视频包装</div>
+                </div>
+                <div class="cricle_desc">
+                    策化课程大纲<br>
+                    设计课程体系<br>
+                    规划授课内容<br>
+                    制作课程文案
+                </div>
+            </div>
+            <div class="workflow_img_right">
+                <img src="/img/pic_箭头.png" width="12" height="29"/>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-2 workflow_img_padding">
+            <div class="workflow_img_sub">
+                <div class="circle">
+                    <div class="circle_num"><img src="/img/pic_6.png" width="20" height="30"/></div>
+                    <div class="circle_words">课件交付</div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

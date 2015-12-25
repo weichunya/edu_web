@@ -14,7 +14,7 @@
     <script src="js/flickerplate.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
-    {{--<script src="//vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>--}}
+    <script src="//vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
     {{--<link href="//example.com/path/to/video-js.min.css" rel="stylesheet">--}}
     {{--<script src="//example.com/path/to/video.min.js"></script>--}}
     {{--<script>--}}
@@ -25,7 +25,7 @@
     <link href="js/video-js/video-js.css"  type="text/css" rel="stylesheet">
     <script src="js/video-js/video.js" type="text/javascript"></script>
     <script src="js/edu.js" type="text/javascript"></script>
-    <script>videojs.options.flash.swf = "video-js.swf";</script>
+    <script>videojs.options.flash.swf = "js/video-js/video-js.swf";</script>
 </head>
 
 <body>

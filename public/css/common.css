@@ -16,9 +16,116 @@ ul,li{
     padding:0
 }
 
-header div, nav .tags, .problems_content, .program_three,.workflow,.workflow_img_content,.videos_content {
-    /*width: 80%;*/
-    width: 1000px;
+.row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+@media screen and (min-width: 1000px){
+    header div, nav .tags, .problems_content, .program_three,.workflow,.workflow_img_content,.videos_content {
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+    header div, nav .tags, .problems_content, .program_three,.workflow,.workflow_img_content,.videos_content {
+        width: 85%;
+    }
+
+    .flickerplate ul.flicks>li{
+        float:left;
+        width:1%;
+        height:100%;
+        background-position:center;
+        background-size:cover;
+        display:table
+    }
+
+    .cricle_desc{
+        color: #ffffff;
+        text-align: center;
+        font-size: 1.4em;
+        margin-top: 20px;
+        margin-bottom: 20px !important;
+        line-height: 1.8;
+    }
+
+    .workflow_img{
+        background-color: #ff7058;
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        min-height: 30px !important;
+    }
+
+    .workflow_img_right{
+        width: 50px;
+        text-align: center;
+        height: 300px !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header div, nav .tags, .problems_content, .program_three,.workflow,.workflow_img_content,.videos_content {
+        width: 90%;
+    }
+
+    .problems_title {
+        color: #38d3b2;
+        font-size: 3.2em !important;
+        font-weight: 200;
+        text-align: center;
+        width: 100%;
+        margin-top: 0px !important;
+    }
+
+    nav {
+        height: 40px !important;
+        background-color: #38d3b2;
+    }
+
+    nav .sub_tag {
+        float: left;
+        color: #14a083;
+        line-height: 40px !important;
+        width: 11%;
+        text-align: center;
+        font-size: 1.4em !important;
+    }
+
+    .nav_active{
+        background-color: #13A083;
+        color: #ffffff !important;
+        height: 40px !important;
+    }
+
+    .cricle_desc{
+        color: #ffffff;
+        text-align: center;
+        font-size: 1.4em;
+        margin-top: 20px;
+        margin-bottom: 20px !important;
+        line-height: 1.8;
+    }
+
+    .workflow{
+        display: none;
+    }
+
+    .workflow_img{
+        background-color: #ff7058;
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        min-height: 30px !important;
+        display: none;
+    }
+
+    .workflow_img_right{
+        width: 50px;
+        text-align: center;
+        height: 300px !important;
+    }
 }
 
 header {
@@ -132,7 +239,11 @@ div .video_blue {
 .video_one{
     float:left;
     margin:20px 10px;
-    color:#AEB2B1;
+}
+
+.video_padding{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .video_pic{
@@ -141,22 +252,23 @@ div .video_blue {
 }
 
 .video_pic,.video_title{
-    width: 313px;
+    width: 100%;
 }
 
-.video_one img{
+.video_pic img{
     width: 100%;
     height: 100%;
     border: none;
+    margin-top: 2em;
 }
 
-.video_one a:hover img{
+.video_pic a:hover img{
     border:1px dotted #AEB2B1;
 }
 
 .video_title{
     font-size: 1.8em;
-    margin-top:20px;
+    margin-top: 2em;
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
@@ -181,6 +293,9 @@ div .video_blue {
     color: #38d3b2;
 }
 
+.video_teacher{
+    color:#AEB2B1;
+}
 
 .video_teacher_name,.video_teacher_grade{
     float: left;
@@ -419,13 +534,18 @@ footer {
     background-color: #ff7058;
     margin-top: 10px;
     width: 100%;
-    height: 330px;
+    height: auto;
+    min-height: 330px;
 }
 
 .workflow_img_content{
     height: 100%;
     margin: 0 auto;
     text-align: center;
+}
+
+.workflow_img_padding{
+    padding: 0!important;
 }
 
 .common_box{
@@ -582,7 +702,7 @@ footer {
 
 .videos_content{
     height: 100%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 .banner {
