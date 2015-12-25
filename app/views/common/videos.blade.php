@@ -5,7 +5,7 @@
             @foreach ($yuwen as $index=>$video)
                 <div class="video_one">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -28,7 +28,7 @@
             @foreach ($shuxue as $index=>$video)
                 <div class="video_one">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -51,7 +51,7 @@
             @foreach ($yingyu as $index=>$video)
                 <div class="video_one">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -74,7 +74,7 @@
             @foreach ($wuli as $index=>$video)
                 <div class="video_one">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -97,7 +97,7 @@
             @foreach ($huaxue as $index=>$video)
                 <div class="video_one">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -120,7 +120,7 @@
             @foreach ($dili as $index=>$video)
                 <div class="video_one">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -143,7 +143,7 @@
             @foreach ($zhengzhi as $index=>$video)
                 <div class="video_one">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <img src="{{$video->pic or 'img/img_default.png'}}"/>
+                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>

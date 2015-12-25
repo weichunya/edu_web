@@ -143,6 +143,10 @@ div .video_blue {
     border: none;
 }
 
+.video_one a:hover img{
+    border:1px dotted #AEB2B1;
+}
+
 .video_title{
     font-size: 1.8em;
     margin-top:20px;
@@ -379,7 +383,7 @@ footer {
     color: #ED6D47;
 }
 .program_three_title_detail{
-    width: 95%;
+    width: 80%;
     margin: 10px auto 0 auto;
     font-size: 1.4em;
     line-height: 1.5;
