@@ -63,11 +63,32 @@ ul,li{
         text-align: center;
         height: 300px !important;
     }
+
+
+    .bar1_left, .bar1_right {
+        width: 100% !important;
+    }
+
+    .bar2_left, .bar2_right {
+        width: calc(100% - 25px) !important;;
+    }
+
+    .bar3_left, .bar3_right {
+        width: calc(100% - 50px) !important;;
+    }
+
+    .bar4_left, .bar4_right {
+        width: calc(100% - 75px) !important;;
+    }
+
+    .bar5_left, .bar5_right {
+        width: calc(100% - 100px) !important;;
+    }
 }
 
 @media screen and (max-width: 600px){
     header div, nav .tags, .problems_content, .program_three,.workflow,.workflow_img_content,.videos_content {
-        width: 90%;
+        width: 95%;
     }
 
     .problems_title {
@@ -125,6 +146,26 @@ ul,li{
         width: 50px;
         text-align: center;
         height: 300px !important;
+    }
+
+    .video_title{
+        font-size: 1.4em !important;
+        margin-top: 2em;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    .video_teacher_name,.video_teacher_grade{
+        float: left;
+        font-size: 1.3em !important;
+        margin-top: 10px;
+    }
+
+    .margin-top{
+        margin-top: 20px;
     }
 }
 
@@ -247,7 +288,7 @@ div .video_blue {
 }
 
 .video_pic{
-    height: 176px;
+    height: auto;
     /*background-color: #1b6d85;*/
 }
 
@@ -260,6 +301,7 @@ div .video_blue {
     height: 100%;
     border: none;
     margin-top: 2em;
+    border:1px dotted #ffffff;
 }
 
 .video_pic a:hover img{
@@ -351,23 +393,23 @@ footer {
 }
 
 .bar1_left, .bar1_right {
-    width: 370px;
+    width: 74%;
 }
 
 .bar2_left, .bar2_right {
-    width: 340px;
+    width: calc(74% - 30px);
 }
 
 .bar3_left, .bar3_right {
-    width: 310px;
+    width: calc(74% - 60px);
 }
 
 .bar4_left, .bar4_right {
-    width: 280px;
+    width: calc(74% - 90px);
 }
 
 .bar5_left, .bar5_right {
-    width: 250px;
+    width: calc(74% - 120px);
 }
 
 .bar1_left, .bar2_left, .bar3_left, .bar4_left, .bar5_left {
@@ -510,7 +552,6 @@ footer {
     font-size: 1.4em;
     line-height: 1.5;
 }
-
 .program_three_title_detail span{
     color: #7d7d7d;
 }
@@ -518,6 +559,7 @@ footer {
 .program_three_title_detail ul li{
     list-style-type: square;
     color: #ED6D46;
+    text-align: justify;
 }
 
 .clear{

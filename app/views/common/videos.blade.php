@@ -1,11 +1,11 @@
 <!-- videos begin -->
 <div class="videos" name="pannel_yuwen">
     <div class="video_row row">
-        <div class="videos_content">
+        <div class="videos_content clearfix">
             @foreach ($yuwen as $index=>$video)
                 <div class="col-xs-6 col-sm-6 col-md-4 video_padding">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
+                        <a href="javascript:void(0);"><img class="img-responsive" src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -24,11 +24,11 @@
 
 <div class="videos hide" name="pannel_shuxue">
     <div class="video_row row">
-        <div class="videos_content">
+        <div class="videos_content clearfix">
             @foreach ($shuxue as $index=>$video)
                 <div class="col-xs-6 col-sm-6 col-md-4 video_padding">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
+                        <a href="javascript:void(0);"><img class="img-responsive" src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -47,11 +47,11 @@
 
 <div class="videos hide" name="pannel_yingyu">
     <div class="video_row row">
-        <div class="videos_content">
+        <div class="videos_content clearfix">
             @foreach ($yingyu as $index=>$video)
                 <div class="col-xs-6 col-sm-6 col-md-4 video_padding">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
+                        <a href="javascript:void(0);"><img class="img-responsive" src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -70,11 +70,11 @@
 
 <div class="videos hide" name="pannel_wuli">
     <div class="video_row row">
-        <div class="videos_content">
+        <div class="videos_content clearfix">
             @foreach ($wuli as $index=>$video)
                 <div class="col-xs-6 col-sm-6 col-md-4 video_padding">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
+                        <a href="javascript:void(0);"><img class="img-responsive" src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -93,11 +93,11 @@
 
 <div class="videos hide" name="pannel_huaxue">
     <div class="video_row row">
-        <div class="videos_content">
+        <div class="videos_content clearfix">
             @foreach ($huaxue as $index=>$video)
                 <div class="col-xs-6 col-sm-6 col-md-4 video_padding">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
+                        <a href="javascript:void(0);"><img class="img-responsive" src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -116,11 +116,11 @@
 
 <div class="videos hide" name="pannel_dili">
     <div class="video_row row">
-        <div class="videos_content">
+        <div class="videos_content clearfix">
             @foreach ($dili as $index=>$video)
                 <div class="col-xs-6 col-sm-6 col-md-4 video_padding">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
+                        <a href="javascript:void(0);"><img class="img-responsive" src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>
@@ -139,11 +139,11 @@
 
 <div class="videos hide" name="pannel_zhengzhi">
     <div class="video_row row">
-        <div class="videos_content">
+        <div class="videos_content clearfix">
             @foreach ($zhengzhi as $index=>$video)
                 <div class="col-xs-6 col-sm-6 col-md-4 video_padding">
                     <div class="video_pic" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
-                        <a href="javascript:void(0);"><img src="{{$video->pic or 'img/img_default.png'}}"/></a>
+                        <a href="javascript:void(0);"><img class="img-responsive" src="{{$video->pic or 'img/img_default.png'}}"/></a>
                     </div>
                     <div class="video_title" videoAddr="{{$video->url}}" picUrl="{{$video->pic}}" videoTitle="{{$video->title}}">
                         <a href="javascript:void(0);">{{$video->title}}</a>

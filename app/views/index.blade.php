@@ -8,24 +8,24 @@
         <div class="problems_items">
             <table border="0" width="100%" cellspacing="0" cellpadding="0">
                 <tr>
-                    <td align="right"><div class="bar1_left">教辅书市场同质化严重</div></td>
-                    <td align="left"><div class="bar1_right">销售难以突破</div></td>
+                    <td width="50%" align="right"><div class="bar1_left">教辅书市场同质化严重</div></td>
+                    <td width="50%" align="left"><div class="bar1_right">销售难以突破</div></td>
                 </tr>
                 <tr>
-                    <td align="right"><div class="bar2_left">互联网在线教育时代来临</div></td>
-                    <td align="left"><div class="bar2_right">教辅书按在升级</div></td>
+                    <td width="50%" align="right"><div class="bar2_left">互联网在线教育时代来临</div></td>
+                    <td width="50%" align="left"><div class="bar2_right">教辅书按在升级</div></td>
                 </tr>
                 <tr>
-                    <td align="right"><div class="bar3_left">教辅大鳄率先进入微课化模式</div></td>
-                    <td align="left"><div class="bar3_right">竞争压力骤然加剧</div></td>
+                    <td width="50%" align="right"><div class="bar3_left">教辅大鳄率先进入微课化模式</div></td>
+                    <td width="50%" align="left"><div class="bar3_right">竞争压力骤然加剧</div></td>
                 </tr>
                 <tr>
-                    <td align="right"><div class="bar4_left">想实现自己的教辅书微课平台</div></td>
-                    <td align="left"><div class="bar4_right">苦于无技术支撑</div></td>
+                    <td width="50%" align="right"><div class="bar4_left">想实现自己的教辅书微课平台</div></td>
+                    <td width="50%" align="left"><div class="bar4_right">苦于无技术支撑</div></td>
                 </tr>
                 <tr>
-                    <td align="right"><div class="bar5_left">每年200-300万搭建平台</div></td>
-                    <td align="left"><div class="bar5_right">维护费用成本过高</div></td>
+                    <td width="50%" align="right"><div class="bar5_left">每年200-300万搭建平台</div></td>
+                    <td width="50%" align="left"><div class="bar5_right">维护费用成本过高</div></td>
                 </tr>
             </table>
         </div>
@@ -50,10 +50,10 @@
             旨在打造最适合教辅书商的优质网络教学课件制作方案。
         </div>
     </div>
-    <div class="program_three">
-        <div class="program_three_left">
+    <div class="program_three center-block clearfix">
+        <div class="col-xs-12 col-sm-4 col-md-4 margin-top">
             <div class="program_three_left_img">
-                <img src="/img/icon_专属.png" width="168px" height="159px" >
+                <img src="/img/icon_专属.png" class="img-responsive center-block" width="168px" height="159px" >
             </div>
             <div class="program_three_title">
                 专属
@@ -67,9 +67,9 @@
                 </ul>
             </div>
         </div>
-        <div class="program_three_right">
+        <div class="col-xs-12 col-sm-4 col-md-4 margin-top">
             <div class="program_three_left_img">
-                <img src="/img/icon_价廉.png" width="168px" height="159px" >
+                <img src="/img/icon_价廉.png" class="img-responsive center-block" width="168px" height="159px" >
             </div>
             <div class="program_three_title">
                 价廉
@@ -88,9 +88,9 @@
                 </ul>
             </div>
         </div>
-        <div class="program_three_main">
+        <div class="col-xs-12 col-sm-4 col-md-4 margin-top">
             <div class="program_three_left_img">
-                <img src="/img/icon_质优.png" width="168px" height="159px" >
+                <img src="/img/icon_质优.png" class="img-responsive center-block" width="168px" height="159px" >
             </div>
             <div class="program_three_title">
                 质优
@@ -105,7 +105,6 @@
                 </ul>
             </div>
         </div>
-        <div class="clear"></div>
     </div>
 </div>
 
