@@ -33,6 +33,19 @@ ul,li{
         display: inline;
         width: auto;
     }
+
+    .video_pic{
+        padding-left: 0px;
+        padding-right: 0px;
+        height: auto;
+    }
+
+    .video_pic img{
+        width: 100% !important;
+        height: 176px !important;
+        margin-top: 2em;
+        border:1px dotted #ffffff;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px){
@@ -320,13 +333,15 @@ div .video_blue {
     margin:20px 10px;
 }
 
+.video_pic{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: auto;
+}
+
 .video_padding{
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.video_pic{
-    height: auto;
 }
 
 .video_pic,.video_title{
@@ -336,7 +351,6 @@ div .video_blue {
 .video_pic img{
     width: 100%;
     height: 100%;
-    border: none;
     margin-top: 2em;
     border:1px dotted #ffffff;
 }
@@ -353,6 +367,10 @@ div .video_blue {
     text-overflow:ellipsis;
     word-wrap: break-word;
     word-break: break-all;
+}
+
+.video_title a{
+    width: 100%;
 }
 
 .video_title a:link{

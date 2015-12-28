@@ -59,7 +59,6 @@
                     <div class="video_teacher">
                         <div class="video_teacher_name">讲师：{{$video->name}}</div>
                         {{--<div class="video_teacher_grade">年级：初一</div>--}}
-                        <div class="clear"></div>
                     </div>
                 </div>
             @endforeach
