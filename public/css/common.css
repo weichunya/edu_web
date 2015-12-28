@@ -8,7 +8,6 @@ html, body {
 
 body{
     font-size: 100%;
-    /*font-size: 62.5%;*/
 }
 
 ul,li{
@@ -17,19 +16,36 @@ ul,li{
 }
 
 .row{
-    margin-left: 0px !important;
-    margin-right: 0px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 @media screen and (min-width: 1000px){
     header div, nav .tags, .problems_content, .program_three,.workflow,.workflow_img_content,.videos_content {
         width: 1000px;
     }
+
+    header div .itemmy {
+        height: 100%;
+        line-height: 65px;
+        font-size: 1.8em;
+        text-decoration: none;
+        display: inline;
+        width: auto;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px){
     header div, nav .tags, .problems_content, .program_three,.workflow,.workflow_img_content,.videos_content {
         width: 85%;
+    }
+
+    header div .itemmy {
+        height: 100%;
+        line-height: 65px;
+        font-size: 2em !important;
+        text-decoration: none;
+        text-align: center;
     }
 
     .flickerplate ul.flicks>li{
@@ -88,7 +104,20 @@ ul,li{
 
 @media screen and (max-width: 600px){
     header div, nav .tags, .problems_content, .program_three,.workflow,.workflow_img_content,.videos_content {
-        width: 95%;
+        width: 90%;
+    }
+
+    header div{
+        margin-left: 10%;
+    }
+
+    header div .itemmy {
+        height: 100%;
+        line-height: 65px;
+        /*margin: 0 20px 0 10px;*/
+        font-size: 1.6em !important;
+        text-decoration: none;
+        text-align: center;
     }
 
     .problems_title {
@@ -150,7 +179,7 @@ ul,li{
 
     .video_title{
         font-size: 1.4em !important;
-        margin-top: 2em;
+        margin-top: 1em !important;
         white-space:nowrap;
         overflow:hidden;
         text-overflow:ellipsis;
@@ -167,6 +196,11 @@ ul,li{
     .margin-top{
         margin-top: 20px;
     }
+
+    .problems {
+        display:none;
+    }
+
 }
 
 header {
@@ -181,16 +215,6 @@ header {
 
 header div{
     margin: 0 auto;
-}
-
-header div .item {
-    float: right;
-    height: 100%;
-    line-height: 65px;
-    width: auto;
-    margin: 0 20px 0 10px;
-    font-size: 1.8em;
-    text-decoration: none;
 }
 
 header a:link{
@@ -213,10 +237,24 @@ header .active {
     color: #0ED2B0;
 }
 
-.carousel {
+.carousel_flicker {
     height: 436px;
     width: 100%;
     margin-top: 65px;
+}
+
+#carousel-example-generic{
+    margin-top: 65px;
+}
+
+.carousel .carousel-inner{
+    background-color: #FF9E00;
+}
+
+.carousel .carousel-inner .item img{
+    clear: both;
+    display: block;
+    margin:auto;
 }
 
 nav {
@@ -289,7 +327,6 @@ div .video_blue {
 
 .video_pic{
     height: auto;
-    /*background-color: #1b6d85;*/
 }
 
 .video_pic,.video_title{
@@ -310,7 +347,7 @@ div .video_blue {
 
 .video_title{
     font-size: 1.8em;
-    margin-top: 2em;
+    margin-top: 20px;
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;

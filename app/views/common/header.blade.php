@@ -12,7 +12,8 @@
     <script src="js/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
     <script src="js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
     <script src="js/flickerplate.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    {{--<script src="js/bootstrap.min.js" type="text/javascript"></script>--}}
+    <script src="js/bootstrap.js" type="text/javascript"></script>
 
     <script src="//vjs.zencdn.net/ie8/1.1.1/videojs-ie8.min.js"></script>
     {{--<link href="//example.com/path/to/video-js.min.css" rel="stylesheet">--}}
@@ -29,14 +30,15 @@
 </head>
 
 <body>
-<div id="top"></div>
+
 <header>
-    <div>
-        <a href="#"><div id="head_3" class="item">合作案例</div></a>
-        <a href="#"><div id="head_2" class="item">业务介绍</div></a>
-        <a href="#"><div id="head_1" class="item active">视频展示</div></a>
+    <div class="row">
+        <a href="#"><div id="head_1" class="col-xs-4 col-sm-4 col-md-1 col-md-offset-8 itemmy active">视频展示</div></a>
+        <a href="#program"><div id="head_2" class="col-xs-4 col-sm-4 col-md-1 itemmy">业务介绍</div></a>
+        <a href="#elephant"><div id="head_3" class="col-xs-4 col-sm-4 col-md-1 itemmy">合作案例</div></a>
     </div>
 </header>
 
-@include('common.carousel')
+{{--@include('common.carousel')--}}
+@include('common.carouselBootstrap')
 @include('common.nav')

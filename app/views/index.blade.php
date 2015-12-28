@@ -210,7 +210,7 @@
     </div>
 </div>
 
-<div class="common_box">
+<div class="common_box" id="common_box">
     <div class="common_padding"></div>
     <div class="common_title">硬件&nbsp;+&nbsp;软件</div>
     <div class="common_title_sub">双重优势成为您的安心之选</div>

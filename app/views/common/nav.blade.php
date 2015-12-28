@@ -1,4 +1,5 @@
-<nav>
+<div id="top"></div>
+<nav id="nav">
     <div class="tags">
         <a href="javascript:void(0);"><div class="sub_tag nav_active" name="yuwen">语文</div></a>
         <a href="javascript:void(0);"><div class="sub_tag" name="shuxue">数学</div></a>
