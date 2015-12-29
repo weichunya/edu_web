@@ -11,8 +11,10 @@
                     <source src="http://vjs.zencdn.net/v/oceans.mp4" id="videoUrl"/>
 
                     {{--@foreach($videoList as $value)--}}
-                        {{--@if (strcmp($value->type,'m3u8') == 0) <source src="{{ $value->url }}" />--}}
-                        {{--@else <source src="{{ $value->url }}" type="video/{{ $value->type }}" />--}}
+                        {{--@if (strcmp($value->type,'m3u8') == 0) --}}
+                            {{--<source src="{{ $value->url }}" />--}}
+                        {{--@else --}}
+                            {{--<source src="{{ $value->url }}" type="video/{{ $value->type }}" />--}}
                         {{--@endif--}}
                     {{--@endforeach--}}
 

@@ -480,8 +480,11 @@ footer {
 .problems_content {
     margin: 0 auto;
     height: auto;
-    font-family: "SimHei";
-    font-family: "STHeiti Light";
+}
+
+.problems_content,.program,.common_title{
+    font-family: "Microsoft Yahei";
+    font-weight: lighter;
 }
 
 .problems_padding1 {
@@ -582,8 +585,6 @@ footer {
 .program{
     margin: 0 auto;
     height: auto;
-    font-family: "SimHei";
-    font-family: "STHeiti Light";
 }
 
 .program_padding{
@@ -722,7 +723,6 @@ footer {
     color: #5cc2ed;
     font-size: 6em;
     text-align: center;
-    font-family: "STHeiti Light";
 }
 
 .common_title_sub{
