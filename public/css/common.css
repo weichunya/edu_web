@@ -46,6 +46,11 @@ ul,li{
         margin-top: 2em;
         border:1px dotted #ffffff;
     }
+
+    #banner-video{
+        width: 100% !important;
+        height: 600px !important;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px){
@@ -112,6 +117,11 @@ ul,li{
 
     .bar5_left, .bar5_right {
         width: calc(100% - 100px) !important;;
+    }
+
+    #banner-video{
+        width: 100% !important;
+        height: 470px !important;
     }
 }
 
@@ -212,6 +222,44 @@ ul,li{
 
     .problems {
         display:none;
+    }
+
+    .carousel-title{
+        position: absolute;
+        width: 100%;
+        font-family: "Microsoft Yahei";
+        height: 30px !important;
+        background-color: #663f00;
+        bottom: 0px;
+        z-index: 50;
+        filter:alpha(opacity=70);
+        opacity:0.7;
+    }
+
+    .carousel-title-content{
+        height: 100%;
+    }
+
+    .carousel-title-content-left{
+        font-size: 1.4em !important;
+        color: #ffffff;
+        line-height: 30px !important;
+    }
+
+    .carousel-title-content-right{
+        position: relative;
+        height: 100%;
+    }
+
+    .carousel-indicators{
+        top: 9px !important;
+        height: 100%;
+        margin-bottom: 0px;
+    }
+
+    #banner-video{
+        width: 100% !important;
+        height: 300px !important;
     }
 
 }
@@ -836,7 +884,7 @@ footer {
     height: 50px;
     background-color: #663f00;
     bottom: 0px;
-    z-index: 999;
+    z-index: 50;
     filter:alpha(opacity=70);
     opacity:0.7;
 }

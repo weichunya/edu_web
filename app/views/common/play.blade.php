@@ -7,7 +7,7 @@
                     <span class="banner-title" id="banner-title">[高清]</span>&nbsp;&nbsp;
                     {{--<span class="banner-quality">[高清]</span>--}}
                 </div>
-                <video id="banner-video" class="video-js vjs-default-skin vjs-big-play-centered" width="100%" height="600" controls preload="none" poster="">
+                <video id="banner-video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" poster="">
                     <source src="http://vjs.zencdn.net/v/oceans.mp4" id="videoUrl"/>
 
                     {{--@foreach($videoList as $value)--}}
