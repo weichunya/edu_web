@@ -3,6 +3,16 @@ $(document).ready(function(){
     var banner_title = $('#banner-title');
     var myPlayer = videojs('banner-video');
     var playModel = $('#playModel');
+    var carousel = $('.carousel');
+
+    carousel.carousel({
+        interval: 3000
+    })
+    carousel.on('slide.bs.carousel', function (relatedTarget) {
+        var a = relatedTarget.relatedTarget;
+        var desc = a.attributes["desc"].value;
+        $('#carousel-title-word').html(desc);
+    })
 
     myPlayer.on('play', function() {
         $('.vjs-text-track-display').addClass('vjs-hidden');
