@@ -143,6 +143,20 @@ ul,li{
         text-align: center;
     }
 
+    .video_pic{
+        padding-left: 0px;
+        padding-right: 0px;
+        height: auto;
+    }
+
+    .video_pic img{
+        width: 100% !important;
+        height: 85px !important;
+        margin-top: 2em;
+        border:1px dotted #ffffff;
+    }
+
+
     .problems_title {
         color: #38d3b2;
         font-size: 3.2em !important;
