@@ -924,4 +924,14 @@ footer {
     margin-bottom: 0px;
 }
 
+.carousel-indicators li{
+    background-color: #94784C;
+    border: 1px solid #94784C;
+    margin-left: 5px;
+}
+
+.carousel-indicators .active{
+    margin-left: 5px;
+}
+
 
