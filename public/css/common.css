@@ -238,39 +238,6 @@ ul,li{
         display:none;
     }
 
-    .carousel-title{
-        position: absolute;
-        width: 100%;
-        font-family: "Microsoft Yahei";
-        height: 30px !important;
-        background-color: #663f00;
-        bottom: 0px;
-        z-index: 50;
-        filter:alpha(opacity=70);
-        opacity:0.7;
-    }
-
-    .carousel-title-content{
-        height: 100%;
-    }
-
-    .carousel-title-content-left{
-        font-size: 1.4em !important;
-        color: #ffffff;
-        line-height: 30px !important;
-    }
-
-    .carousel-title-content-right{
-        position: relative;
-        height: 100%;
-    }
-
-    .carousel-indicators{
-        top: 9px !important;
-        height: 100%;
-        margin-bottom: 0px;
-    }
-
     #banner-video{
         width: 100% !important;
         height: 300px !important;
@@ -890,48 +857,3 @@ footer {
 .banner_hide{
     display: none;
 }
-
-.carousel-title{
-    position: absolute;
-    width: 100%;
-    font-family: "Microsoft Yahei";
-    height: 50px;
-    background-color: #663f00;
-    bottom: 0px;
-    z-index: 50;
-    filter:alpha(opacity=70);
-    opacity:0.7;
-}
-
-.carousel-title-content{
-    height: 100%;
-}
-
-.carousel-title-content-left{
-    font-size: 2em;
-    color: #ffffff;
-    line-height: 50px;
-}
-
-.carousel-title-content-right{
-    position: relative;
-    height: 100%;
-}
-
-.carousel-indicators{
-    top: 19px;
-    height: 100%;
-    margin-bottom: 0px;
-}
-
-.carousel-indicators li{
-    background-color: #94784C;
-    border: 1px solid #94784C;
-    margin-left: 5px;
-}
-
-.carousel-indicators .active{
-    margin-left: 5px;
-}
-
-

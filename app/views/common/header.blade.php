@@ -8,6 +8,7 @@
     {{--<link href="css/video-js.css"  type="text/css" rel="stylesheet">--}}
 
     <link href="css/common.css" rel="stylesheet" type="text/css">
+    {{--<link href="css/carousel-my.css" rel="stylesheet" type="text/css">--}}
     <script src="js/jquery-v1.10.2.min.js" type="text/javascript"></script>
     <script src="js/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
     <script src="js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
