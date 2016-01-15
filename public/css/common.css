@@ -254,6 +254,7 @@ header {
     position: fixed;
     z-index: 99;
     background-color: #ffffff;
+    opacity: 0.8;
 }
 
 header div{
